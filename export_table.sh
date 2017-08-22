@@ -3,7 +3,7 @@
 START_ID=$1
 END_ID=$2
 TABLE_NAME=YOUR_BIG_TABLE_NAME
-OUT=$TABLE_NAME\_$MIN_ID\_$MAX_ID.csv # column separte by "|"
+OUT=$TABLE_NAME\_$START_ID\_$END_ID.csv # column separte by "|"
 
 #######################
 sqlplus -s "USER_NAME/PASSWD@ORACLE_DB" << END_SQL > /dev/null
@@ -30,6 +30,6 @@ END_SQL
 #######################
 
 ########################################################################################
-## Don't use 'select *'. You'd better trim each column and format datetime field in your query.
+## Don't use 'select *'. You'd better trim each column and format DATE field in your query.
 ## Then concatenate all together. 
 ########################################################################################

@@ -1,5 +1,4 @@
 # python2
-#  All imports
 import os
 from datetime import datetime
 from multiprocessing import Pool
